@@ -4,6 +4,8 @@
  */
 package login;
 
+import java.util.Arrays;
+
 /**
  *
  * @author oscarfh06
@@ -118,8 +120,13 @@ public class VentanaInicio extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        if (usuarioTextField.equals(usuario)) {
-            // Terminar
+        if (usuarioTextField.getText().equals(usuario) && Arrays.equals(contrasenaTextField.getPassword(), contrasena.toCharArray())) {
+ 
+            textoContrasenaIncorrecta.setVisible(false);
+            textoAcceso.setVisible(true);
+        }
+        else{
+            textoContrasenaIncorrecta.setVisible(true);
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
