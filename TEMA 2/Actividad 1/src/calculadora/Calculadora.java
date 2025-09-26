@@ -46,6 +46,7 @@ public class Calculadora extends javax.swing.JFrame {
         buttonDividir = new javax.swing.JButton();
         buttonMultiplicar = new javax.swing.JButton();
         buttonRestar = new javax.swing.JButton();
+        buttonCero = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,6 +145,11 @@ public class Calculadora extends javax.swing.JFrame {
         buttonCinco.setFont(new java.awt.Font("Liberation Sans", 1, 36)); // NOI18N
         buttonCinco.setForeground(new java.awt.Color(0, 0, 0));
         buttonCinco.setText("5");
+        buttonCinco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonCincoMouseClicked(evt);
+            }
+        });
         buttonCinco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonCincoActionPerformed(evt);
@@ -285,6 +291,21 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonCero.setBackground(new java.awt.Color(51, 153, 255));
+        buttonCero.setFont(new java.awt.Font("Liberation Sans", 1, 36)); // NOI18N
+        buttonCero.setForeground(new java.awt.Color(0, 0, 0));
+        buttonCero.setText("0");
+        buttonCero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonCeroMouseClicked(evt);
+            }
+        });
+        buttonCero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCeroActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -327,7 +348,9 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addComponent(buttonSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(buttonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonCero, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -352,14 +375,17 @@ public class Calculadora extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(buttonCuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buttonCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buttonSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(buttonCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(buttonTres, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(buttonDos, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ButtonUno, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(buttonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(ButtonUno, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(buttonCero, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(buttonSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 8, Short.MAX_VALUE))
         );
 
@@ -514,6 +540,21 @@ public class Calculadora extends javax.swing.JFrame {
         ejecutarOperacion();
     }//GEN-LAST:event_buttonIgualMouseClicked
 
+    private void buttonCeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonCeroMouseClicked
+        // TODO add your handling code here:
+        escribirSimbolo("0");
+    }//GEN-LAST:event_buttonCeroMouseClicked
+
+    private void buttonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonCeroActionPerformed
+
+    private void buttonCincoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonCincoMouseClicked
+        // TODO add your handling code here:
+        escribirSimbolo("5");
+
+    }//GEN-LAST:event_buttonCincoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -549,13 +590,41 @@ public class Calculadora extends javax.swing.JFrame {
     private void ejecutarOperacion(){
         System.out.println((pantallaCalculadora.getText()));
         
-        System.out.println(Double.parseDouble((pantallaCalculadora.getText())));
-//        Double resultado = Double.parseDouble((pantallaCalculadora.getText()));
-//        pantallaCalculadora.setText(String.valueOf(resultado));
-       
+        if (pantallaCalculadora.getText().isEmpty()) {
+            System.out.println("Ingresa dígitos para operar");
+            return;
+        }
+        
+        if(pantallaCalculadora.getText().contains("+")){
+           String[] sumaSeparada = pantallaCalculadora.getText().split("\\+");
+           int suma = Integer.parseInt(sumaSeparada[0]) + Integer.parseInt(sumaSeparada[1]);
+           pantallaCalculadora.setText(String.valueOf(suma));
+        }
+        else if (pantallaCalculadora.getText().contains("-")) {
+            String[] sumaSeparada = pantallaCalculadora.getText().split("-");
+            int resta = Integer.parseInt(sumaSeparada[0]) - Integer.parseInt(sumaSeparada[1]);
+            pantallaCalculadora.setText(String.valueOf(resta));
+        }
+        else if (pantallaCalculadora.getText().contains("/")) {
+            String[] sumaSeparada = pantallaCalculadora.getText().split("\\/");
+            if(Integer.parseInt(sumaSeparada[0]) < Integer.parseInt(sumaSeparada[1]) || Integer.parseInt(sumaSeparada[1]) == 0){
+                pantallaCalculadora.setText("Error");
+                return;
+            }
+            int division = Integer.parseInt(sumaSeparada[0]) / Integer.parseInt(sumaSeparada[1]);
+
+            pantallaCalculadora.setText(String.valueOf(division));
+        }
+        else if (pantallaCalculadora.getText().contains("*")) {
+            String[] sumaSeparada = pantallaCalculadora.getText().split("\\*");
+            int multiplicacion = Integer.parseInt(sumaSeparada[0]) * Integer.parseInt(sumaSeparada[1]);
+            pantallaCalculadora.setText(String.valueOf(multiplicacion));
+        }
     }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonUno;
+    private javax.swing.JButton buttonCero;
     private javax.swing.JButton buttonCinco;
     private javax.swing.JButton buttonCuatro;
     private javax.swing.JButton buttonDividir;
