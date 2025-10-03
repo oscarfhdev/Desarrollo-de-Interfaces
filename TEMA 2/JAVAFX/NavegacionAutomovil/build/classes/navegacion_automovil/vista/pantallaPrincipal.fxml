@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navegacion_automovil.controlador.PantallaPrincipalControlador">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="900.0" layoutX="-57.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="35.0" prefWidth="843.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="52.0" text="11:16" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="805.0" layoutY="6.0" onMouseClicked="#cerrarApp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/apagar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="770.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/wifi.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="121.0" fitWidth="122.0" layoutX="125.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/telefono.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="115.0" layoutX="595.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/maps.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="109.0" layoutX="441.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/spotify.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="130.0" layoutX="287.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/configuracion.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="147.0" layoutY="192.0" prefHeight="25.0" prefWidth="78.0" text="Teléfono" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="192.0" prefHeight="25.0" prefWidth="121.0" text="Configuración" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="192.0" prefHeight="25.0" prefWidth="61.0" text="Spotify" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="192.0" prefHeight="25.0" prefWidth="52.0" text="Maps" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="135.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/calendario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="355.0" prefHeight="25.0" prefWidth="93.0" text="Calendario" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="289.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hangouts.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="297.0" layoutY="355.0" prefHeight="25.0" prefWidth="86.0" text="Hangouts" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="146.0" fitWidth="148.0" layoutX="423.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/youtube.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="457.0" layoutY="355.0" prefHeight="25.0" prefWidth="78.0" text="YT Music" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="146.0" fitWidth="137.0" layoutX="582.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/amazon_music.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="587.0" layoutY="356.0" prefHeight="25.0" prefWidth="127.0" text="Amazon Music" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
