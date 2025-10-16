@@ -73,5 +73,6 @@
             <Separator layoutX="236.0" layoutY="10.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="1.0" style="-fx-background-color: black;" />
          </children>
       </Pane>
+      <Pane fx:id="panelMapa" layoutY="35.0" prefHeight="393.0" prefWidth="843.0" />
    </children>
 </AnchorPane>
