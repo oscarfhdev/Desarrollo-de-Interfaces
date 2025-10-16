@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navegacion_automovil.controlador.PantallaSpotifyControlador">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navegacion_automovil.controlador.PantallaSpotifyControlador">
        <children>
       <Pane prefHeight="35.0" prefWidth="843.0" style="-fx-background-color: black;">
          <children>
@@ -45,6 +45,64 @@
                   <Image url="@../images/square.png" />
                </image>
             </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="34.0" layoutY="60.0" prefHeight="341.0" prefWidth="418.0">
+         <children>
+            <ImageView fitHeight="262.0" fitWidth="257.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bailando_enrique_iglesias.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="351.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/despacito_luis_fonsi.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="14.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/la_bicleta_shakira.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="134.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back_song.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="188.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/play.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="251.0" layoutY="290.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back_song.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="459.0" layoutY="73.0" prefHeight="267.0" prefWidth="357.0" style="-fx-background-color: lightgreen; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="8.0" layoutY="6.0" prefHeight="61.0" prefWidth="338.0" text="Con tu física y tu química, también tu anatomía" wrapText="true">
+               <font>
+                  <Font name="Monospaced Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="67.0" prefHeight="70.0" prefWidth="338.0" text="La cerveza y el tequila, y tu boca con la mía" wrapText="true">
+               <font>
+                  <Font name="Monospaced Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="128.0" prefHeight="70.0" prefWidth="338.0" text="Ya no puedo más (ya no puedo más)" wrapText="true">
+               <font>
+                  <Font name="Monospaced Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="192.0" prefHeight="70.0" prefWidth="338.0" text="Ya no puedo más (ya no puedo más)" wrapText="true">
+               <font>
+                  <Font name="Monospaced Regular" size="20.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

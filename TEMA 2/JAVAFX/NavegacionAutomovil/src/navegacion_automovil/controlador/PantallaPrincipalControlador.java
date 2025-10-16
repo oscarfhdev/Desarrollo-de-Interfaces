@@ -57,7 +57,6 @@ public class PantallaPrincipalControlador implements Initializable {
 
     @FXML
     private void abrirMaps(MouseEvent event) throws IOException {
-        System.out.println("entra");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/navegacion_automovil/vista/pantallaMaps.fxml"));
 
         Parent root = loader.load();
