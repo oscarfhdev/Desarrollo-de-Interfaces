@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -45,6 +46,31 @@
                   <Image url="@../images/square.png" />
                </image>
             </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="193.0" layoutY="48.0" prefHeight="53.0" prefWidth="457.0" style="-fx-background-color: lightgrey; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="83.0" layoutX="25.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icono_mas.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="13.0" text="Nuevo Trayecto">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="83.0" layoutX="250.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icono_ubicacion.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="289.0" layoutY="13.0" text="¿Donde estoy?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="236.0" layoutY="10.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="1.0" style="-fx-background-color: black;" />
          </children>
       </Pane>
    </children>
