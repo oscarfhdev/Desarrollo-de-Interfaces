@@ -43,3 +43,10 @@ JavaFX permite crear interfaces más modernas, adaptables y con efectos visuales
 ## 🚀 Lo próximo que veré
 En el futuro, exploraremos **Flutter y Dart**, un entorno multiplataforma para crear **interfaces modernas y reactivas** que funcionan en **Android, iOS, web y escritorio** desde una sola base de código.
 
+
+## 💡 Lo que estoy aprendiendo
+Este módulo me está ayudando a:
+- Comprender cómo se construyen interfaces gráficas desde cero  
+- Aplicar principios de diseño y usabilidad  
+- Utilizar herramientas visuales profesionales (NetBeans GUI Builder, SceneBuilder)  
+- Integrar la parte visual con la lógica del programa  
