@@ -33,10 +33,13 @@ JavaFX permite crear interfaces más modernas, adaptables y con efectos visuales
 - 🚗 *Sistema Android Auto (interfaz simulada sin funcionalidad)*
 
 📚 **Conceptos aprendidos:**
-- Estructura MVC en aplicaciones JavaFX
 - Manejo de archivos FXML y controladores
 - Uso de componentes visuales modernos (Label, Button, TextField, ListView, etc.)
 - Integración entre SceneBuilder y NetBeans
 - Estilos CSS para personalizar la interfaz
 
 ---
+
+## 🚀 Lo próximo que veré
+En el futuro, exploraremos **Flutter y Dart**, un entorno multiplataforma para crear **interfaces modernas y reactivas** que funcionan en **Android, iOS, web y escritorio** desde una sola base de código.
+
