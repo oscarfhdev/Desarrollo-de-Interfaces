@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,7 +16,7 @@
             <Image url="@../imagenes/fondo.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="67.0" fitWidth="174.0" layoutX="14.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="174.0" layoutX="193.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/logo_lg.png" />
          </image>
@@ -36,7 +38,7 @@
                   <Image url="@../imagenes/indice_calidad/86-100.png" />
                </image>
             </ImageView>
-            <Label fx:id="labelFecha1" layoutX="41.0" layoutY="45.0" prefHeight="85.0" prefWidth="111.0" style="-fx-alignment: center;" text="100%">
+            <Label fx:id="labelPorcentajeCalidad" layoutX="41.0" layoutY="45.0" prefHeight="85.0" prefWidth="111.0" style="-fx-alignment: center;" text="100%">
                <font>
                   <Font name="Noto Sans Bold" size="40.0" />
                </font>
@@ -47,6 +49,73 @@
                </font>
             </Label>
          </children>
+      </Pane>
+      <Pane layoutX="62.0" layoutY="375.0" prefHeight="213.0" prefWidth="191.0" style="-fx-background-color: #52D6F7; -fx-background-radius: 30px;">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="128.0" layoutX="-10.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/termometro.png" />
+               </image>
+            </ImageView>
+            <Slider fx:id="slideTemperatura" layoutX="124.0" layoutY="17.0" max="12.0" min="-5.0" orientation="VERTICAL" value="2.0" />
+            <Label layoutX="140.0" layoutY="14.0" text="12º" textFill="#ff7a7a">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="142.0" text="-5º" textFill="#2b31f2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTemperatura" layoutX="40.0" layoutY="161.0" prefHeight="37.0" prefWidth="111.0" style="-fx-alignment: center;" text="0.0º" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="56.0" fitWidth="58.0" layoutX="459.0" layoutY="14.0" onMouseClicked="#apagarFrigorifico" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/botonApagado.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Pane layoutX="273.0" layoutY="375.0" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="63.0" layoutX="13.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/tabla.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="17.0" prefHeight="67.0" prefWidth="101.0" text="Contenido del frigorífico" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="273.0" layoutY="488.0" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="63.0" layoutX="13.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/ajustes.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="17.0" prefHeight="67.0" prefWidth="111.0" text="Configuración" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Pane>
    </children>
 </AnchorPane>
