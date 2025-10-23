@@ -12,8 +12,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -24,14 +30,33 @@ public class PantallaGestionAlimentosControlador implements Initializable {
     @FXML
     private Label labelHora;
     @FXML
-    private Label labelFecha;
-    @FXML
     private ImageView botonAtras;
+    @FXML
+    private TableView<?> tablaAlimentos;
+    @FXML
+    private TableColumn<?, ?> columnaTablaAlimento;
+    @FXML
+    private TableColumn<?, ?> columnaTablaCantidad;
+    @FXML
+    private TableColumn<?, ?> columnaTablaCategoria;
+    @FXML
+    private TextField fieldNombre;
+    @FXML
+    private Spinner<Integer> spinnerCantidad;
+    @FXML
+    private ComboBox<?> comboboxCategoria;
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         inicializarFechayHora();
+        inicializarSpinnerCantidad();
+    }    
+
+    private void inicializarSpinnerCantidad() {
+        // Configurar el campo de cantidad
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
+        spinnerCantidad.setValueFactory(valueFactory);
     }    
 
     public void inicializarFechayHora(){
