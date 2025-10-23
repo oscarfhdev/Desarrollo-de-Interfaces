@@ -83,14 +83,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Pane layoutX="273.0" layoutY="375.0" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
+      <Pane layoutX="273.0" layoutY="375.0" onMouseClicked="#irGestionAlimentos" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
          <children>
-            <ImageView fitHeight="73.0" fitWidth="63.0" layoutX="13.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgTabla" fitHeight="73.0" fitWidth="63.0" layoutX="13.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/tabla.png" />
                </image>
             </ImageView>
-            <Label layoutX="83.0" layoutY="17.0" prefHeight="67.0" prefWidth="101.0" text="Contenido del frigorífico" wrapText="true">
+            <Label layoutX="83.0" layoutY="17.0" prefHeight="67.0" prefWidth="101.0" text="Gestión de alimentos" wrapText="true">
                <font>
                   <Font name="Serif Bold" size="14.0" />
                </font>
@@ -100,7 +100,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Pane>
-      <Pane layoutX="273.0" layoutY="488.0" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
+      <Pane layoutX="273.0" layoutY="488.0" onMouseClicked="#irConfiguracion" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
          <children>
             <ImageView fitHeight="73.0" fitWidth="63.0" layoutX="13.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -15,7 +15,6 @@ public class FrigorificoInteligente extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("/frigorifico_inteligente/vista/pantallaPrincipal.fxml"));
             
             // Cargo el scene
-            
             Scene scene = new Scene(root);
             
             primaryStage.setTitle("Frigorifico Inteligente");

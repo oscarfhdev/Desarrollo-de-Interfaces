@@ -1,4 +1,3 @@
-
 package frigorifico_inteligente.controlador;
 
 import java.io.IOException;
@@ -20,45 +19,29 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-
-public class PantallaPrincipalControlador implements Initializable {
+public class PantallaGestionAlimentosControlador implements Initializable {
 
     @FXML
     private Label labelHora;
     @FXML
     private Label labelFecha;
     @FXML
-    private Slider slideTemperatura;
-    @FXML
-    private Label labelTemperatura;
-    @FXML
-    private Label labelPorcentajeCalidad;
-    @FXML
-    private ImageView imgTabla;
+    private ImageView botonAtras;
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         inicializarFechayHora();
-        asociarLabelSlide();
     }    
 
-    private void asociarLabelSlide() {
-        labelTemperatura.textProperty().bind(
-    slideTemperatura.valueProperty().asString("%.1f " + "º")
-        );
-    }
-    
     public void inicializarFechayHora(){
         // Formato de fecha y hora
         DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
-        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         // Evento que se ejecuta cada segundo
         Timeline reloj = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
             LocalDateTime dateTimeActual = LocalDateTime.now();
             labelHora.setText(formatoHora.format(dateTimeActual));
-            labelFecha.setText(formatoFecha.format(dateTimeActual));
         }));
         reloj.setCycleCount(Timeline.INDEFINITE);
         reloj.play();
@@ -70,34 +53,17 @@ public class PantallaPrincipalControlador implements Initializable {
     }
 
     @FXML
-    private void irGestionAlimentos(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/frigorifico_inteligente/vista/pantallaGestionAlimentos.fxml"));
+    private void irPantallaPrincipal(MouseEvent event) throws IOException {
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/frigorifico_inteligente/vista/pantallaPrincipal.fxml"));
 
         Parent root = loader.load();
         Scene escena = new Scene(root);
         
         // Obtener el Stage actual desde el botón
-        Stage stage = (Stage) imgTabla.getScene().getWindow();
+        Stage stage = (Stage) botonAtras.getScene().getWindow();
 
         // Reemplazar la escena actual
         stage.setScene(escena);
-        stage.setTitle("Frigorífico Inteligente - Gestión de Alimentos");  
+        stage.setTitle("Frigorífico Inteligente");  
     }
-
-    @FXML
-    private void irConfiguracion(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/frigorifico_inteligente/vista/pantallaConfiguracion.fxml"));
-
-        Parent root = loader.load();
-        Scene escena = new Scene(root);
-        
-        // Obtener el Stage actual desde el botón
-        Stage stage = (Stage) imgTabla.getScene().getWindow();
-
-        // Reemplazar la escena actual
-        stage.setScene(escena);
-        stage.setTitle("Frigorífico Inteligente - Configuración");  
-    }
-
-    
 }
