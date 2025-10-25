@@ -58,21 +58,26 @@
       <TextField fx:id="fieldNombre" layoutX="50.0" layoutY="129.0" prefHeight="26.0" prefWidth="157.0" promptText="Nombre del Alimento" />
       <Spinner fx:id="spinnerCantidad" editable="true" layoutX="219.0" layoutY="129.0" prefHeight="26.0" prefWidth="88.0" />
       <ComboBox fx:id="comboboxCategoria" layoutX="318.0" layoutY="129.0" prefHeight="26.0" prefWidth="163.0" promptText="Categoría" />
-      <Button layoutX="122.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Actualizar" visible="false" />
-      <Button layoutX="127.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Guardar">
+      <Button fx:id="btnActualizar" layoutX="122.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#actualizarAlimento" style="-fx-background-color: lightgreen;" text="Actualizar" visible="false" />
+      <Button fx:id="btnGuardar" layoutX="127.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#guardarAlimento" style="-fx-background-color: lightgreen;" text="Guardar">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="231.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Eliminar">
+      <Button fx:id="btnEliminar" layoutX="231.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#eliminarAlimento" style="-fx-background-color: red;" text="Eliminar">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="335.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: lightyellow;" text="Limpiar">
+      <Button fx:id="btnLimpiar" layoutX="335.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#limpiarCampos" style="-fx-background-color: lightyellow;" text="Limpiar">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label fx:id="lblError" layoutX="46.0" layoutY="104.0" prefHeight="18.0" prefWidth="440.0" style="-fx-alignment: center;" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="Noto Mono" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
