@@ -2,3 +2,6 @@ a8a8c56d-ee6a-4164-802d-041411ad361f|Hamburguesa Vaca|2|PROCESADOS
 6a1f450d-967f-45c6-8eb0-21246f1e3018|Brocoli Pack 500gr|1|VERDURAS
 af63d440-23d0-470e-9769-27984d8619a9|Croissant Chocolate|4|DULCES_Y_BOLLERIA
 f10ca55b-0451-4466-9e16-91fe67d6d1fa|Salchichas con Jamón|2|PROCESADOS
+5567c9a0-ecc9-484d-bd83-f54c90fcf1ad|Bolsa Manzana 1kg|1|FRUTAS
+30a0b7f8-7c17-4a32-ada7-ca434b3c5c50|Solomillo de Cerdo 300gr|1|CARNES_Y_PESCADOS
+a36a943e-d4e4-473b-9beb-48e1cc8dfc61|Pack Zanahora 3Kg|1|VERDURAS

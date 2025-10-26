@@ -19,7 +19,7 @@ public enum Categoria {
         this.calificacion = calificacion;
     }
 
-    public double getScore() {
+    public double getCalificacion() {
         return calificacion;
     }
 

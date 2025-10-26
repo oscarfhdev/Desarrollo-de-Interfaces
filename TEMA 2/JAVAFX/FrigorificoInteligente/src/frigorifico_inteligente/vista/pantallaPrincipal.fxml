@@ -33,7 +33,7 @@
       </Label>
       <Pane layoutX="62.0" layoutY="180.0" prefHeight="174.0" prefWidth="408.0" style="-fx-background-color: #B3EEFD; -fx-background-radius: 30px;">
          <children>
-            <ImageView fitHeight="268.0" fitWidth="248.0" layoutX="-28.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imagenProgreso" fitHeight="268.0" fitWidth="248.0" layoutX="-28.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/indice_calidad/86-100.png" />
                </image>
@@ -43,7 +43,7 @@
                   <Font name="Noto Sans Bold" size="40.0" />
                </font>
             </Label>
-            <Label layoutX="192.0" layoutY="33.0" prefHeight="109.0" prefWidth="191.0" text="Calidad de los alimentos" wrapText="true">
+            <Label fx:id="textoAuxiliar" layoutX="192.0" layoutY="33.0" prefHeight="109.0" prefWidth="191.0" text="Calidad de los alimentos" wrapText="true">
                <font>
                   <Font name="Serif Bold" size="27.0" />
                </font>
