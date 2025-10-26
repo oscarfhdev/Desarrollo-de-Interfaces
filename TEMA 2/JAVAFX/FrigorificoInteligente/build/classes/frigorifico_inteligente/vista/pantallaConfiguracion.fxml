@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -42,5 +43,157 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+      <Pane layoutX="72.0" layoutY="113.0" prefHeight="157.0" prefWidth="388.0" style="-fx-background-color: #479CB2; -fx-background-radius: 30px;">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="136.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/fotoCuenta.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="162.0" layoutY="40.0" prefHeight="35.0" prefWidth="218.0" text="Óscar Fernández" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="162.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/check.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="187.0" layoutY="96.0" prefHeight="22.0" prefWidth="169.0" text="Conectado con LgAccount" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="260.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="284.0" layoutY="132.0" prefHeight="22.0" prefWidth="91.0" text="Cerrar sesión" underline="true" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="162.0" layoutY="61.0" prefHeight="35.0" prefWidth="190.0" text="oferher0910@g.educaand.es" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="504.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 3px 0px 3px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Comprobar actualizaciones" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="36.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/comprobarActualizaciones.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="458.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 3px 0px 0px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Almacenamiento del frigorífico" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/almacenamiento.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="412.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 3px 0px 0px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Configurar conexión" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="56.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/wifi.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="366.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 3px 0px 0px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Brillo de la pantalla" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="56.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/brillo.png" />
+               </image>
+            </ImageView>
+            <Slider layoutX="265.0" layoutY="16.0" prefHeight="15.0" prefWidth="109.0" value="70.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="320.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 3px 0px 0px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Volumen del altavoz" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="56.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/altavoz.png" />
+               </image>
+            </ImageView>
+            <Slider layoutX="265.0" layoutY="16.0" prefHeight="15.0" prefWidth="109.0" value="20.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="550.0" prefHeight="46.0" prefWidth="388.0" style="-fx-border-color: black; -fx-border-width: 0px 0px 3px 0px; -fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="61.0" layoutY="6.0" prefHeight="35.0" prefWidth="320.0" text="Restablecemiento de fábrica" textFill="#a84343" underline="true" wrapText="true">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="36.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/restablecer.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
