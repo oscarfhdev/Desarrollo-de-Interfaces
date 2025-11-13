@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/controlador/PantallaGestionAlimentosControlador.java</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/modelo/Alimento.java</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/modelo/Categoria.java</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/DAO/AlimentoDAO.java</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/vista/pantallaGestionAlimentos.fxml</file>
-            <file>file:/home/oscarfh06/Documentos/OSCAR/2DAM/DESARROLLO%20DE%20INTERFACES/TEMA%202/JAVAFX/FrigorificoInteligente/src/frigorifico_inteligente/alimentos.txt</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
