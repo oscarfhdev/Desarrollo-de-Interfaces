@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../styles/quienesquien.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quien_es_quien.controlador.QuienEsQuienControlador">
+   <center>
+      <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent;" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="gridPersonajes" hgap="15.0" vgap="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <VBox prefHeight="160.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="15.0" style="-fx-background-color: #fff3e0; -fx-background-radius: 10;">
+               <children>
+                  <Label text="Pregunta al Oráculo:" textFill="#e65100">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboPreguntas" prefWidth="300.0" promptText="Selecciona... ¿Es un Saiyan?" styleClass="combo-box" />
+                  <Button mnemonicParsing="false" onAction="#onPreguntar" styleClass="button" text="BUSCAR KI">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onAyuda" styleClass="button" text="MANUAL DEL MAESTRO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="txtLog" editable="false" prefHeight="100.0" prefWidth="200.0" styleClass="text-area" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #ffe0b2;" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="header-label" text="En Busca del Ki - Dragon Ball Edition">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

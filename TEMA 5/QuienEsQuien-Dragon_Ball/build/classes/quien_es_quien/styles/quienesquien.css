@@ -1,0 +1,84 @@
+/* Fondo Principal - Tema Naranja/Azul */
+.root {
+    -fx-background-color: #f0f0f0;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Etiqueta de Encabezado */
+.header-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e65100;
+    /* Naranja Oscuro */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+/* Carta de Personaje (VBox) */
+.character-card {
+    -fx-background-color: white;
+    -fx-border-color: #ff9800;
+    /* Naranja */
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.character-card:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-border-color: #2196f3;
+    /* Azul - Color de contraste de Goku */
+    -fx-effect: dropshadow(three-pass-box, rgba(33, 150, 243, 0.4), 10, 0, 0, 4);
+}
+
+/* Nombre del Personaje */
+.character-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Personaje Descartado (Deshabilitado) */
+.character-card-disabled {
+    -fx-opacity: 0.4;
+    -fx-effect: none;
+    -fx-border-color: #999;
+    -fx-background-color: #eee;
+}
+
+/* Botones */
+.button {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 8 20;
+}
+
+.button:hover {
+    -fx-background-color: #fb8c00;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #f57c00;
+}
+
+/* ComboBox (Lista Desplegable) */
+.combo-box {
+    -fx-background-radius: 5;
+    -fx-border-color: #ff9800;
+    -fx-border-radius: 5;
+}
+
+/* TextArea (Área de Texto) */
+.text-area {
+    -fx-control-inner-background: #fff3e0;
+    /* Naranja Claro/Crema */
+    -fx-border-color: #ff9800;
+    -fx-font-family: 'Monospaced';
+}
