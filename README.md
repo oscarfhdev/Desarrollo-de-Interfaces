@@ -31,6 +31,7 @@ JavaFX permite crear interfaces más modernas, adaptables y con efectos visuales
 📌 **Proyectos realizados con JavaFX:**
 - 🧮 *Calculadora (JavaFX)*  
 - 🚗 *Sistema Android Auto (interfaz simulada sin funcionalidad)*
+- 🧊 *Frigorifico inteligente (índice de calidad de los alimentos según las categorías)*
 
 📚 **Conceptos aprendidos:**
 - Manejo de archivos FXML y controladores
@@ -40,8 +41,6 @@ JavaFX permite crear interfaces más modernas, adaptables y con efectos visuales
 
 ---
 
-## 🚀 Lo próximo que veré
-En el futuro, exploraremos **Python con Flet**, un entorno multiplataforma para crear **interfaces modernas y reactivas** que funcionan en **Android, iOS, web y escritorio** desde una sola base de código.
 
 
 ## 💡 Lo que estoy aprendiendo
