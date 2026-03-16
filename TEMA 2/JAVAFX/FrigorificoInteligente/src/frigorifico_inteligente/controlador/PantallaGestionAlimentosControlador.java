@@ -148,6 +148,23 @@ public class PantallaGestionAlimentosControlador implements Initializable {
    
     
     @FXML
+    private void mostrarAyudaSensible(MouseEvent event) {
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+        alerta.setTitle("Ayuda - Gestión de Alimentos");
+        alerta.setHeaderText("¿Cómo gestionar tu inventario?");
+        alerta.setContentText("En esta pantalla puedes administrar los alimentos de tu frigorífico:\n\n"
+                + "- Guardar: Rellena nombre, cantidad y categoría, y pulsa 'Guardar' para añadirlo.\n"
+                + "- Actualizar: Selecciona un alimento de la tabla, cambia sus datos y pulsa 'Actualizar'.\n"
+                + "- Eliminar: Selecciona un alimento de la tabla y pulsa 'Eliminar' para quitarlo.\n"
+                + "- Limpiar: Vacía los campos para empezar de cero.");
+        
+        // Aplicar estilos
+        alerta.getDialogPane().getStylesheets().add(getClass().getResource("/frigorifico_inteligente/estilos/ayuda.css").toExternalForm());
+        
+        alerta.showAndWait();
+    }
+
+    @FXML
     private void apagarFrigorifico(MouseEvent event) {
         System.exit(0);
     }

@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -42,6 +43,21 @@ public class PantallaConfiguracionControlador implements Initializable {
         }));
         reloj.setCycleCount(Timeline.INDEFINITE);
         reloj.play();
+    }
+
+    @FXML
+    private void mostrarAyudaSensible(MouseEvent event) {
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+        alerta.setTitle("Ayuda - Configuración");
+        alerta.setHeaderText("Opciones del Frigorífico");
+        alerta.setContentText("Te encuentras en la pantalla de Configuración.\n\n"
+                + "Desde aquí podrás gestionar los ajustes del sistema, como la conexión Wi-Fi, el sonido o el brillo de la pantalla.\n"
+                + "Pulsa la flecha de la esquina para volver a la pantalla principal.");
+        
+        // Aplicar estilos
+        alerta.getDialogPane().getStylesheets().add(getClass().getResource("/frigorifico_inteligente/estilos/ayuda.css").toExternalForm());
+        
+        alerta.showAndWait();
     }
 
     @FXML

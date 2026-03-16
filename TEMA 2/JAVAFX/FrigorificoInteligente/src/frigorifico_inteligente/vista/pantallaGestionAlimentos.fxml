@@ -32,6 +32,14 @@
             <Font name="Noto Sans Bold" size="50.0" />
          </font>
       </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="400.0" layoutY="22.0" onMouseClicked="#mostrarAyudaSensible" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ayuda.png" /> 
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
       <ImageView fitHeight="56.0" fitWidth="58.0" layoutX="459.0" layoutY="14.0" onMouseClicked="#apagarFrigorifico" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/botonApagado.png" />

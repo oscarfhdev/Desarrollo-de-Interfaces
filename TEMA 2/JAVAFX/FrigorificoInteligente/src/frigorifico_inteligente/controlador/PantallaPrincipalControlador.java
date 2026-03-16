@@ -16,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
@@ -131,6 +132,23 @@ public class PantallaPrincipalControlador implements Initializable {
         return "86-100.png"; // pct > 85
     }
     
+
+    @FXML
+    private void mostrarAyudaSensible(MouseEvent event) {
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+        alerta.setTitle("Ayuda Sensible");
+        alerta.setHeaderText("Ayuda de la Pantalla Principal");
+        alerta.setContentText("Desde esta pantalla puedes:\n"
+                + "- Ver la fecha y hora actual.\n"
+                + "- Ajustar la temperatura deslizando el control vertical.\n"
+                + "- Revisar el índice de calidad general de tu frigorífico.\n"
+                + "- Acceder a la Gestión de Alimentos o a la Configuración pulsando en sus respectivos botones inferiores.");
+        
+        // Aplicar estilos
+        alerta.getDialogPane().getStylesheets().add(getClass().getResource("/frigorifico_inteligente/estilos/ayuda.css").toExternalForm());
+        
+        alerta.showAndWait();
+    }
 
     @FXML
     private void apagarFrigorifico(MouseEvent event) {
