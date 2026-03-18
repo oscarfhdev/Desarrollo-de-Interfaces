@@ -1,20 +1,19 @@
 package quien_es_quien.modelo;
 
 public class Personaje {
-    // Atributos del personaje
+    // Datos básicos
     private String nombre;
     private String rutaImagen;
 
-    // Características booleanas para el juego
+    // Características para el juego
     private boolean esSaiyan;
     private boolean esVillano;
     private boolean tienePelo;
     private boolean esVerde;
     private boolean esAndroide;
     private boolean esTerricola;
-    private boolean esDios; // Añadido para personajes de Super
+    private boolean esDios; // Personajes de Super (Beerus, Whis...)
 
-    // Constructor completo
     public Personaje(String nombre, String rutaImagen, boolean esSaiyan, boolean esVillano, boolean tienePelo,
             boolean esVerde, boolean esAndroide, boolean esTerricola, boolean esDios) {
         this.nombre = nombre;
@@ -28,7 +27,6 @@ public class Personaje {
         this.esDios = esDios;
     }
 
-    // Getters para acceder a los datos
     public String getNombre() {
         return nombre;
     }
